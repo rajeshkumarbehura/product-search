@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: SupplyRewardEngine
+
+  r2dbc:
+    database: supply_reward
+    username: supplyrewarduser
+    password: ${DB_PASSWORD}
+    url: r2dbc:postgresql://db-prod-442xsw5pk7.sellde.cloud:9432/${spring.r2dbc.database}
+    pool:
+      enabled: true
+      initial-size: 3
+      max-size: 20
+      validation-query: "select 1"
+      max-idle-time: 10
+
+
+  flyway:
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    url: jdbc:postgresql://db-prod-442xsw5pk7.sellde.cloud:9432/${spring.r2dbc.database}
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri:  https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_vKv7cQbv4
+
+  webflux:
+    base-path: /supply-reward
+
+server:
+  port: 80
+
+sellde:
+  api-user-product: https://titan.sellde.cloud/user-product
+  supply-reward-api-key: PROD-30203P0QCAQ75U6216D507X8QV2LM06UO3D5WE0HN73C8270E

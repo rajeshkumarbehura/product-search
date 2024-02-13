@@ -1,0 +1,27 @@
+aws:
+  region: ap-southeast-1
+  user-pool: ap-southeast-1_U3EdmFdGS
+
+spring:
+  application:
+    name: ProductSearch
+
+  r2dbc:
+    database: productdb
+    username: productdev
+    password: admin@334
+    url: r2dbc:postgresql://localhost:5432/${spring.r2dbc.database}
+
+  flyway:
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    url: jdbc:postgresql://localhost:5432/${spring.r2dbc.database}
+
+
+server:
+  port: 8080
+
+
+sellde:
+  api-user-product: https://titan-dev.sellde.cloud/user-product
+  supply-reward-api-key: DEV-fc2f9035-42ee-41da-8edf-cd2b4815f5f2

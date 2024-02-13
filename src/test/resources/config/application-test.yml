@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: OrderEngine
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:3542/test-supply-reward-db
+    username: rewardtestuser
+    password: admin@6645
+
+
+
+  flyway:
+    url: jdbc:postgresql://localhost:3542/test-supply-reward-db
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_F64JehlME
+
+server:
+  port: 7001
+
+
+sellde:
+    supply-reward-api-key: TEST-fc2f9035-42ee-41da-8edf-cd2b4815f5f1

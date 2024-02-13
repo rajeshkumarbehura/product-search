@@ -1,0 +1,44 @@
+{
+  "cartId": null,
+  "storeId": "53bb36cc-ebe7-43af-a545-7ef52c36ae9a",
+  "buyerUserId": "41bb36cc-ebe7-43af-a545-7ef52c36a399",
+  "buyerMobileNo": "+84900909090",
+  "buyerName": "Rajesh Kumar",
+  "orderNo": "",
+  "totalPrice": 16000.50,
+  "shippingPrice": 40000.50,
+  "discountPrice": 10000.50,
+  "coupon": "S100",
+  "paymentOption": "CASH_ON_DELIVERY",
+  "cartItems": [
+    {
+      "productId": "23f5d84e-c64f-48e3-a283-c13ac6b831cb",
+      "quantity": 2,
+      "productMrp": 90000.50,
+      "productPrice": 80000.50,
+      "productName": "The makeup box",
+      "productImagePath": "foundation_box.jpg",
+      "note": "Pack in nice red box"
+    },
+    {
+      "productId": "5e29dfd4-896d-43e8-b86a-37c226487efb",
+      "quantity": 4,
+      "productMrp": 70000.50,
+      "productPrice": 60000.50,
+      "productName": "The lipstick box",
+      "productImagePath": "lipstick.jpg",
+      "note": "Pack in nice yellow box"
+    }
+  ],
+  "shipping": {
+    "address": "123, Saigon Street, Hochiminh,Vietnam",
+    "mapAddress": {
+      "lat": 21,
+      "lng": 54
+    },
+    "landmark": "Near the Church",
+    "notes": null,
+    "method": "DELIVERY"
+  },
+  "cartStatus": null
+}

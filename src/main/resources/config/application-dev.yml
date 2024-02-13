@@ -1,0 +1,40 @@
+aws:
+  region: ap-southeast-1
+  user-pool: ap-southeast-1_U3EdmFdGS
+
+spring:
+  application:
+    name: CartEngine
+
+  r2dbc:
+    database: supply_reward
+    username: devsupplyrewarduser
+    password: Z0NQHCYZY06QYMAAPTDWSFEPC@##
+    url: r2dbc:postgresql://db-develop.sellde.cloud:5432/${spring.r2dbc.database}
+    pool:
+      enabled: true
+      initial-size: 3
+      max-size: 20
+      validation-query: "select 1"
+      max-idle-time: 10
+
+  flyway:
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    url: jdbc:postgresql://db-develop.sellde.cloud:5432/${spring.r2dbc.database}
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://cognito-idp.ap-southeast-1.amazonaws.com/ap-southeast-1_FE2b1a05d
+
+  webflux:
+    base-path: /supply-reward
+
+server:
+  port: 80
+
+sellde:
+  api-user-product: https://titan-dev.sellde.cloud/user-product
+  supply-reward-api-key: DEV-fc2f9035-42ee-41da-8edf-cd2b4815f5f2

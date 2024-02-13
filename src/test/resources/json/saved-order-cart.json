@@ -1,0 +1,41 @@
+[
+  {
+    "configName": "basket_seq",
+    "configValue": "1",
+    "rewardType": "FIRST_SIGNUP_BONUS",
+    "rangeList": [
+      {
+        "id": "",
+        "startRange": "0",
+        "endRange": "100000",
+        "discountPrice": "40000"
+      },
+      {
+        "id": "",
+        "startRange": "100000",
+        "endRange": "10000000",
+        "discountPrice": "100000"
+      }
+    ]
+  },
+  {
+    "configName": "basket_seq",
+    "configValue": "2",
+    "rewardType": "SECOND_SIGNUP_BONUS",
+    "rangeList": [
+      {
+        "id": "",
+        "startRange": "1900",
+        "endRange": "41900",
+        "discountPrice": "200000"
+      },
+      {
+        "id": "",
+        "startRange": "1900",
+        "endRange": "41900",
+        "discountPrice": "200000"
+      }
+    ]
+  }
+]
+

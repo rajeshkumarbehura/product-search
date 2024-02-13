@@ -1,0 +1,14 @@
+version: "3"
+services:
+  productdb-pg:
+    image: postgres:13.2
+    container_name: productdb
+    environment:
+      - TZ=GMT+8
+      - POSTGRES_USER=productdev
+      - POSTGRES_PASSWORD=admin@334
+      - POSTGRES_DB=productdb
+    volumes:
+      - ./db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

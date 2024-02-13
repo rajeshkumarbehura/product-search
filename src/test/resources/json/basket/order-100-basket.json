@@ -1,0 +1,16 @@
+{
+  "id": "28880452-6aa2-40f1-895f-4470bcd656db",
+  "customerId": "4d61f984-667b-418f-865a-818e85a7085c",
+  "orderNo": 100,
+  "totalPrice": 4500000,
+  "totalRelyBulkPrice": 5000000,
+  "shippingPrice": 15000,
+  "discountPrice": 40000,
+  "totalMarginPrice": 22250,
+  "selectOption": "FOR_SELF",
+  "basketStatus": "ORDER_CONFIRMED",
+  "preCustomerBadge": "BRONZE",
+  "postCustomerBadge": "SILVER",
+  "orderDate": "2022-09-04T07:40:47.242815Z",
+  "basketId": "28880452-6aa2-40f1-895f-4470bcd656db"
+}

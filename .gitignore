@@ -1,0 +1,15 @@
+*.iml
+.idea
+target
+docker/db/*
+docker/db
+doccker/db-test
+doccker/db-test/**
+docker/pgadmin/*
+docker/pgadmin
+/docker/db-test/
+.DS_Store
+**.DS_Store
+**/.DS_Store
+/.scannerwork/report-task.txt
+/.scannerwork/.sonar_lock
